@@ -27,5 +27,5 @@ private[metrics] trait IORuntimeMetricsPlatform { this: IORuntimeMetrics =>
    * val totalWorkers = runtime.metrics.workStealingThreadPool.map(_.compute.workerThreadCount())
    *   }}}
    */
-  def workStealingThreadPool: Option[WorkStealingPoolMetrics]
+  def workStealingThreadPool: Option[WorkStealingThreadPoolMetrics]
 }

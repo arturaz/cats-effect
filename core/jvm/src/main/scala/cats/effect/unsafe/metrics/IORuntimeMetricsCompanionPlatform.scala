@@ -29,8 +29,8 @@ private[metrics] abstract class IORuntimeMetricsCompanionPlatform {
       val cpuStarvation: CpuStarvationMetrics =
         CpuStarvationMetrics(cpuStarvationSampler)
 
-      val workStealingThreadPool: Option[WorkStealingPoolMetrics] =
-        WorkStealingPoolMetrics(ec)
+      val workStealingThreadPool: Option[WorkStealingThreadPoolMetrics] =
+        WorkStealingThreadPoolMetrics(ec)
     }
 
 }
