@@ -18,4 +18,5 @@ package cats.effect.kernel
 
 import cats.~>
 
+/** @see https://typelevel.org/cats-effect/docs/typeclasses/monadcancel */
 trait Poll[F[_]] extends (F ~> F)
